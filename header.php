@@ -78,11 +78,11 @@
 <!-- Row for blog navigation -->
 		
 			<header class="container" role="banner">
-				<div class="logo container four.columns">
+				<div class="logo container four columns">
 					<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
 					<h4 class="subheader"><?php bloginfo('description'); ?></h4>
 				</div>
-				<nav class="container twelve.colums" role="navigation">
+				<nav class="container twelve columns" role="navigation">
 					<?php wp_nav_menu( array('menu' => 'main_nav' )); ?>
 				</nav>
 			</header>
