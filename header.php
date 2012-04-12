@@ -83,19 +83,7 @@
 					<h4 class="subheader"><?php bloginfo('description'); ?></h4>
 				</div>
 				<nav class="container twelve.colums" role="navigation">
-					<?php 
-						wp_nav_menu( array(
-						'theme_location' => 'main_nav',
-						'container' =>false,
-						'menu_class' => '',
-						'echo' => true,
-						'before' => '',
-						'after' => '',
-						'link_before' => '',
-						'link_after' => '',
-						'depth' => 0,
-						'items_wrap' => '<dl class="nav hide-on-phones"><dt>Blog Menu:</dt>%3$s</dl>',
-					); ?>
+					<?php wp_nav_menu( array('menu' => 'main_nav' )); ?>
 				</nav>
 			</header>
 					
