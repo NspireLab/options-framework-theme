@@ -1,10 +1,8 @@
 <?php
 
 /* 
- * Loads the Options Panel
+ * NspireLab Starter Theme Functions File 
  *
- * If you're loading from a child theme use stylesheet_directory
- * instead of template_directory
  */
  
 if ( !function_exists( 'optionsframework_init' ) ) {
