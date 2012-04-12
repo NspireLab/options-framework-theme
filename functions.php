@@ -26,4 +26,21 @@ if ( !function_exists( 'optionsframework_init' ) ) {
 	register_nav_menus(array(
 	'main_navigation' => __('Main Navigation', 'main_nav'),
 	'second_navigation' => __('Second Navigation', 'second_nav')
-));	
+));
+
+// Register the sidebar(s)
+	register_sidebar(array(
+		'name' => 'BlogSideBar',
+		'id' => 'blog-sidebar',
+		'description' => 'Widgets in this area will be shown on the blog page.',
+		'before_title' => '<h1>',
+		'after_title' => '</h1>'
+	));
+	
+	register_sidebar(array(
+		'name' => 'PageSideBar',
+		'id' => 'page-sidebar',
+		'description' => 'Widgets in this area will be shown on the individual pages.',
+		'before_title' => '<h1>',
+		'after_title' => '</h1>'
+	));		
